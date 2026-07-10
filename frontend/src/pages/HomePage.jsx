@@ -348,7 +348,7 @@ if (name === "" || email === "" || phone === "" || message === "") {
         type: "error",
     });
 } else {
-const response = await fetch("http://localhost:8080/api/contact", {
+const response = await fetch("https://joshuaportfolio-1.onrender.com/api/contact", {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
@@ -403,7 +403,7 @@ const sendMessage = async (e) => {
     setChatbotMessage("");
     }
 
-const response = await fetch("http://localhost:8080/api/openai/chat", {
+const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/chat", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
