@@ -15,7 +15,7 @@ let db = mysql.createConnection({
 
 db.connect(function(err) {
     if (err) throw err;
-    console.log("Connected to the database");
+    console.log("Connected to TiDB");
 });
 
 module.exports = db;
