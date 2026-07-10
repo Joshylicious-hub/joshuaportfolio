@@ -1,7 +1,7 @@
 let mysql = require('mysql2');
 
 let db = mysql.createConnection({
-    host: "localhost",
+    host: "gateway01.ap-southeast-1.prod.aws.tidbcloud.com",
     user: "root",
     password: "1234",
     database: "joshua_portfolio",
