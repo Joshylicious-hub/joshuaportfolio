@@ -219,10 +219,9 @@ year: "2026",
 role: "Online Thinkers Technology - Internship",
 description: "Contributed to the development of responsive websites by building user interfaces, implementing web features, improving SEO performance, and creating digital content while collaborating with a professional development team.",
 features: [
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"} 
+    {description: "Blog & News Section"},
+    {description: "Timeline Design"},
+    {description: "Modern Pet Care Landing Page"}
 ],
 tech: [
     {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
@@ -237,10 +236,10 @@ year: "2025",
 role: "Personal Project",
 description: "Designed and developed LinkUp, a responsive social media web application inspired by the user experiences of Facebook, Instagram, and Twitter. Built with React, HTML, CSS, and JavaScript to showcase modern UI design, reusable components, and responsive frontend development.",
 features: [
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"} 
+    {description: "Social Media Feed"},
+    {description: "Create & Share Posts"},
+    {description: "Modern Design"},
+    {description: "Comment Functionality"}
 ],
 tech: [
     {icon: FaReact, name: "React", style: "react"}, 
@@ -257,10 +256,11 @@ year: "2025",
 role: "Capstone Project",
 description: "Developed EmpowerHer, an AI-powered full stack educational platform featuring an AI chatbot, AI content checker, and AI module generator. Built with responsive design, secure authentication, role-based access, and database integration to deliver an interactive learning experience.",
 features: [
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"},
-    {icon: "HiCodeBracket", description: "Product Catalog", support: "Browse Pad"} 
+    {description: "AI-Powered Chatbot"},
+    {description: "AI Content Moderation"},
+    {description: "Community Forum"},
+    {description: "Interactive Learning Modules"},
+    {description: "AI-Generated Educational Lessons"}
 ],
 tech: [
     {icon: IoLogoJavascript, name: "Javascript", style: "javascript"}, 
@@ -533,47 +533,15 @@ useEffect(() => {
                                 </div>
                                 <div className="website-features">
                                     <h2>Key Features</h2>
-                                    <div className="website-features-container">
-                                        <div className="website-row-container">
-                                            <div className="website-flex-container">
-                                                <div className="website-project-icons-background">
-                                                    <HiCodeBracket className="website-project-icon" />
-                                                </div>
-                                                <div className="website-project">
-                                                    <p>Browse Pad</p>
-                                                </div>
-                                            </div>
-                                            <div className="website-flex-container">
-                                                <div className="website-project-icons-background">
-                                                    <HiCodeBracket className="website-project-icon" />
-                                                </div>
-                                                <div className="website-project">
-                                                    <p>Browse Pad</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="website-row-container">
-                                            <div className="website-flex-container">
-                                                <div className="website-project-icons-background">
-                                                    <HiCodeBracket className="website-project-icon" />
-                                                </div>
-                                                <div className="website-project">
-                                                    
-                                                    <p>Browse Pad</p>
-                                                </div>
-                                            </div>
+                                    <ul>
+                                        {selectedProject.features.map((features) => {
 
-                                            <div className="website-flex-container">
-                                                <div className="website-project-icons-background">
-                                                    <HiCodeBracket className="website-project-icon" />
-                                                </div>
-                                                <div className="website-project">
-                                                    
-                                                    <p>Browse Pad</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            return (
+                                                 <li>{features.description}</li>
+                                            );
+                                        })}
+                                        
+                                    </ul>
                                 </div>
                                 <div className="website-tech-stack">
                                     <h2>Tech Stack</h2>
@@ -784,10 +752,10 @@ useEffect(() => {
                 viewport={{ once: true }}
                 >
                     Hi, I'm <span>Joshua Andres</span>, an<br />
-                     Aspiring Software Engineer.
+                     Aspiring Full Stack Web Developer.
                 </motion.h1>
                 <p className="hero-description">
-                    As an aspiring Software Engineer, I enjoy developing intuitive user
+                    As an aspiring Full Stack Web Developer, I enjoy developing intuitive user
                     interfaces and reliable backend solutions. <br/>I'm committed to writing clean
                     code and building applications that deliver great user experiences.
                 </p>
@@ -1146,7 +1114,7 @@ useEffect(() => {
                             }}
                             viewport={{ once: true }}
                             >
-                                Web Developer, Web Designer, SEO Optimization, Graphics Design, Social Media Marketing
+                                Web Development, Web Design, SEO Optimization, Graphics Design, Social Media Marketing
                             </motion.h3>
                             <div className="company-year">
                                 2026
