@@ -15,6 +15,8 @@ import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
+import { SiWordpress } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
 import { PiCodeBold } from "react-icons/pi";
 import { LuBrainCircuit } from "react-icons/lu";
@@ -226,7 +228,8 @@ tech: [
     {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
     {icon: SiFigma, name: "Figma", style: "figma"}
 ],
-image: [projectdesign, willowfacts, faq, product, willowslide, willowfooter]
+image: [projectdesign, willowfacts, faq, product, willowslide, willowfooter],
+link: ""  
 }, {
 id: 2,
 name: "LinkUp",
@@ -245,7 +248,8 @@ tech: [
     {icon: FaCss3Alt, name: "CSS", style: "css"},
     {icon: IoLogoJavascript, name: "Javascript", style: "javascript"}
 ],
-image: [linkup, linkuphomepage, postpage, profilepage, storiespage, chatpage]
+image: [linkup, linkuphomepage, postpage, profilepage, storiespage, chatpage],
+link: "https://link-up-rust-six.vercel.app/"  
 }, {
 id: 3,
 name: "EmpowerHer",
@@ -265,7 +269,8 @@ tech: [
     {icon: FaCss3Alt, name: "CSS", style: "css"},
     {icon: SiMysql, name: "MySQL", style: "mysql"}
 ], 
-image: [empowerher, empowerherdashboard, empowerherchatbot,  empowerherpersonalized, empowerherlesson, empowerhercommunity]  
+image: [empowerher, empowerherdashboard, empowerherchatbot,  empowerherpersonalized, empowerherlesson, empowerhercommunity],
+link: "https://empowerherbest.com/index.php"  
 }]
 
 const increase = () => {
@@ -306,8 +311,10 @@ useEffect(() => {
 const techItems = [
     { name: "React", icon: <FaReact className="icon-react" />, desc: "Leading frontend library" },
     { name: "Node.js", icon: <FaNodeJs className="icon-node" />, desc: "Leading backend runtime" },
+    { name: "Express.js", icon: <SiExpress className="icon-express" />, desc: "Fast Node.js web framework" },
     { name: "Php", icon: <SiPhp className="icon-php" />, desc: "Backend programming language" },
     { name: "Javascript", icon: <IoLogoJavascript className="icon-javascript" />, desc: "Full-stack programming language" },
+    { name: "Wordpress", icon: <SiWordpress className="icon-wordpress" />, desc: "Content Management System" },
     { name: "HTML", icon: <FaHtml5  className="icon-html" />, desc: "Web markup language" },
     { name: "CSS", icon: <FaCss3Alt className="icon-css" />, desc: "Web styling language" },
     { name: "MongoDB", icon: <DiMongodb className="icon-mongo" />, desc: "NoSQL database system" },
@@ -584,7 +591,7 @@ useEffect(() => {
                         <div className="website-footer">
                            <div className="website-visit" href="https://empowerherbest.com/index.php">
                                 <LuExternalLink className="website-icon"/>
-                                <a href="https://empowerherbest.com/index.php">Visit Site</a>
+                                <a href={selectedProject.link}>Visit Site</a>
                            </div>
                         </div>
                     </div>
