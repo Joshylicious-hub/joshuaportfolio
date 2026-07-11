@@ -393,6 +393,7 @@ const [chatMessage, setChatMessage] = useState([{
     role: "chatbot",
     text: "Hi! I'm Joshua Andres' personal AI assistant. Feel free to ask me anything about his background, skills, projects, or experiences. I'll be happy to help!"
 }]);
+const [isTyping, setIsTyping] = useState(false);
 
 const sendMessage = async (e) => {
     e.preventDefault();
@@ -410,6 +411,8 @@ const sendMessage = async (e) => {
     setChatbotMessage("");
     }
 
+setIsTyping(true);
+
 const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/chat", {
     method: "POST",
     headers: {
@@ -422,8 +425,9 @@ const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/
 
     const data = await response.json();
     
+    setIsTyping(false);
 
-    setTimeout(() => {
+    
         setChatMessage(chatMessage => [
             ...chatMessage,
         {
@@ -431,7 +435,7 @@ const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/
             text: data.reply
         }
         ])
-    }, 2000)
+  
 }
 
 const inputRef = useRef(null);
@@ -629,7 +633,7 @@ useEffect(() => {
             <>
                 <div className="chatbot-dialog-box">
                     <div className="chatbot-name">
-                         <RiRobot2Line className="chatbot-icon" />
+                         <img src={joshuaprofile} className="chatbot-img" />
                          <p>Joshua Andres</p>
                          <button 
                          className="chatbot-back"
@@ -656,7 +660,17 @@ useEffect(() => {
                                 )
                             ))}
                             
-           
+                            {isTyping && (
+                                <div className="chatbot-response typing-indicator">
+                                    <RiRobot2Line className="chatbot-icon" />
+                                    <div className="typing-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            )}
+
                            <div ref={inputRef}></div>
                         </div>
 
