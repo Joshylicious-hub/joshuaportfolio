@@ -1982,6 +1982,10 @@ margin-left: 0px;
 }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    html,
+body {
+    overflow-x: hidden;
+}
 .website-background {
     justify-content:center;
     padding:50px;
@@ -2128,8 +2132,9 @@ nav ul.active{
         transform: none;
         left: auto;
         top: auto;
-        width: auto;
-        margin: 0 15px;
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 .right {
    
@@ -2165,6 +2170,10 @@ nav ul.active{
 }
 
 @media (max-width: 767px) {
+html,
+body {
+    overflow-x: hidden;
+}
 .website-footer {
     justify-content: start;
 }
@@ -2391,7 +2400,6 @@ nav ul.active{
     overflow: hidden;
 }
 .right {
-        box-sizing: border-box;
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
@@ -2567,6 +2575,10 @@ nav ul.active{
 }
 
 @media (max-width: 563px) {
+    html,
+body {
+    overflow-x: hidden;
+}
     .website-image-slide {
         width: 100%;
         max-width: 50px;
@@ -2615,6 +2627,10 @@ nav ul.active{
 }
 
 @media (max-width: 473px) {
+    html,
+body {
+    overflow-x: hidden;
+}
     .chatbot-dialog-box {
         top: 40%;
         left: 50%;
