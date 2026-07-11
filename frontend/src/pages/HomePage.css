@@ -2917,6 +2917,7 @@ padding: 28px 20px 50px 20px;
         max-width: 500px;
         height: 150px;
         object-fit: fill;
+        border-radius: 15px;
     }
 
      .website-image-slide {
