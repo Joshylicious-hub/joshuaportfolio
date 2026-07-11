@@ -479,13 +479,15 @@ color: orange;
     
 }
 .experience-container .additional-h1 {
-    margin-left: 30px;
+    margin-left: 10px;
     font-size: 48px;
     font-weight: 500;
     margin-bottom: 0px !important;
 }
 
-
+.faq-background {
+flex-shrink: 0;
+}
 
 .experience-wrap {
     margin-bottom: 150px;;
@@ -2266,7 +2268,7 @@ height: 30px;
     display: flex;
     width: 100%;
     max-width:100%;
-    padding: 25px 15px;
+    padding: 25px 15px 15px 15px;
     z-index: 10000;
 }
 .company-tech-name {
@@ -2407,7 +2409,7 @@ padding: 8px 20px;
 }
 
 .website-icon {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .tech-btn {
@@ -2715,7 +2717,10 @@ nav ul.active{
     font-size: 28px;
 }
 .project-container {
-   padding: 28px 20px 30px 20px;
+   padding: 28px 20px 10px 20px;
+}
+.website-visit a {
+    font-size: 13px;
 }
 .project-description-container {
         display: flex;
@@ -2828,6 +2833,7 @@ padding: 28px 20px 50px 20px;
 
 .faq h2 {
     font-size: 18px;
+    margin-right: 10px;
 }
 .services-contact-number {
         font-size: 13px;
@@ -2909,7 +2915,7 @@ padding: 28px 20px 50px 20px;
     .website-image-size {
         width: 100%;
         max-width: 500px;
-        height: 200px;
+        height: 150px;
         object-fit: fill;
     }
 
