@@ -1223,7 +1223,7 @@ useEffect(() => {
                             <div className="project-description">
                                 <div className="header-container">
                                     <h1>{project.name}</h1>
-                                    <div className="company-year">
+                                    <div className="company-year-project">
                                        {project.year}
                                     </div>
                                 </div>
@@ -1403,7 +1403,7 @@ useEffect(() => {
 
                     <section className="services">
                         <div className="services-container">
-                             <div className="services-dot">
+                             <div className="services-dot-service">
                                 <div className="dot"></div>
                                 <p>Services</p>
                             </div>
@@ -1610,7 +1610,7 @@ useEffect(() => {
                                 </div>
                                 <div className="services-contact">
                                     <div className="services-available">
-                                         <HiCodeBracket className="project-icon" />
+                                         <HiCodeBracket className="project-icon-services" />
                                         <p className="services-available-location">Available to</p>
                                         <p className="services-location">Metro Manila, Philippines</p>
                                     </div>

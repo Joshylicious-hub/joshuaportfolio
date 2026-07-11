@@ -100,6 +100,10 @@
     padding: 0px;
     
 }
+html,
+body {
+    overflow-x: hidden;
+}
 .background-video {
     position: fixed;
     top: 0;
@@ -510,6 +514,16 @@ color: orange;
 }
 
 .company-year {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    padding: 5px 24px;
+    border-radius: 99px;
+    background: rgba(37, 37, 37, 0.5019607843);
+}
+
+.company-year-project {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -1136,6 +1150,13 @@ background: rgba(255, 255, 255, 0.146);
     margin-bottom: 74px;
 }
 
+.services-dot-service {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 74px;
+}
+
 .services-offer {
     display: flex;
     align-items: start;
@@ -1158,7 +1179,15 @@ background: rgba(255, 255, 255, 0.146);
     border-radius: 12px;
     font-size: 32px;
     margin-top: 23px;
-    background: linear-gradient(213.44deg, #000000 43.78%, #BA4811 124.39%);
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 8px 20px rgba(0,0,0,.45);
 }
 
 .services-first-icon-background {
@@ -1170,7 +1199,15 @@ background: rgba(255, 255, 255, 0.146);
     border-radius: 12px;
     font-size: 32px;
     margin-top: 23px;
-    background: linear-gradient(213.44deg, #000000 43.78%, #BA4811 124.39%);
+   background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 8px 20px rgba(0,0,0,.45);
     
 }
 .text-number {
@@ -1218,7 +1255,7 @@ background: rgba(255, 255, 255, 0.146);
     color: #BBBBBB;
 }
 .services-location {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .frequently {
@@ -1982,10 +2019,6 @@ margin-left: 0px;
 }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    html,
-body {
-    overflow-x: hidden;
-}
 .website-background {
     justify-content:center;
     padding:50px;
@@ -2062,6 +2095,8 @@ padding: 8px 20px;
 .website-icon {
     font-size: 16px;
 }
+
+
 
 .row {
      display: flex;
@@ -2147,10 +2182,15 @@ nav ul.active{
     height: 350px;
 }
 .avatar .signature {
-    width: 200px;
-    height: 87px;
-    bottom: -12%;
-    left: 39%;
+    position: fixed;
+    width: 100%;
+    max-width: 200px;
+    height: 80px;
+
+    bottom: 35%;
+
+    left: 50%;
+    transform: translateX(-50%);
 }
 .email {
     font-size: 24px;
@@ -2170,10 +2210,7 @@ nav ul.active{
 }
 
 @media (max-width: 767px) {
-html,
-body {
-    overflow-x: hidden;
-}
+
 .website-footer {
     justify-content: start;
 }
@@ -2299,8 +2336,78 @@ padding: 8px 20px;
     font-size: 16px;
 }
 
+.tech-btn {
+    width: 40px;
+    height: 40px;
+}
+.tech-btn svg {
+    width: 18px;
+    height: 18px;
+}
+.icon-node {
+    font-size: 40px;
+     color: #5FA04E;
+}
+.icon-express {
+    font-size: 40px;
+    color: #ffffff;
+}
 
+.tech-stack-tech p {
+    font-size: 10px;
+}
 
+.icon-wordpress {
+    font-size: 40px;
+    color: #21759B
+}
+.icon-react {
+    font-size: 40px;
+     color: #61DAFB;
+}
+.icon-php {
+    font-size: 40px;
+      color: #777BB4;
+}
+.icon-javascript {
+    font-size: 40px;
+     color: #F7DF1E;
+}
+.icon-html {
+    font-size: 40px;
+     color: #E34F26;
+}
+.icon-css {
+    font-size: 40px;
+    color: #1572B6;
+}
+.icon-mongo {
+    font-size: 40px;
+    color: #47A248;
+}
+.icon-mysql {
+    font-size: 40px;
+      color: #4479A1;
+}
+
+.container-tech {
+    gap: 10px;
+}
+.tech-stack-tech {
+    gap: 10px;
+    padding: 20px;
+}
+.icon-background-tech {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 25px;
+}
+.company { 
+
+}
+.internship-description {
+    font-size: 16px;
+}   
 ::-webkit-scrollbar {
     display: none;
 }
@@ -2334,13 +2441,18 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 4000;
-    background-color: white;
-    width: 50px;
-    height: 50px;
+    background: rgba(30, 30, 30, 0.75);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.08);
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    color: #111111;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     position: fixed;
     left: 20px;
 }
@@ -2370,14 +2482,30 @@ nav ul.active{
     margin: 0;
     display: none;
 }
+
+.tech-controls {
+    margin-top: 25px;
+}
 .company-experience-container {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 10px;
+   
+    gap: 15px;
 }
-.company-year {
-    margin-top: 10px;
+.company-year-project {
     align-self: flex-start;
+}
+
+.company-details {
+    font-size: 16px;
+}
+.company-name {
+    font-size: 18px;
+}
+.project-container-information p:first-child {
+    font-size: 20px;
+}
+.header-container h1 {
+    font-size: 20px;
 }
 .avatar .name {
     width: 100%;
@@ -2387,10 +2515,10 @@ nav ul.active{
     position: fixed;
     width: 100%;
     max-width: 200px;
-    bottom: 35%;
     height: 80px;
-    left: 36%;
-    align-self: center;
+    bottom: 37%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .row {
     display: flex;
@@ -2439,7 +2567,10 @@ nav ul.active{
     font-size: 44px;
 }
 .hero-description {
-    font-size: 14px;
+    font-size: 16px;
+}
+.container-xs li {
+    margin-bottom: 16px;
 }
 .right ul {
     gap: 8px;
@@ -2449,7 +2580,7 @@ nav ul.active{
     font-size: 28px;
 }
 .about-description p {
-    font-size: 14px;
+    font-size: 16px;
 }
 .about-img-container {
     width: 247px;
@@ -2478,7 +2609,7 @@ nav ul.active{
 }
 
 .about-cards-container p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .about {
@@ -2497,7 +2628,7 @@ nav ul.active{
     margin-bottom: 25px;
 }
 .tech-stack-tech h2 {
-    font-size: 24px;
+    font-size: 18px;
     
 }
 .tech-stack-container {
@@ -2509,11 +2640,14 @@ nav ul.active{
 .experience .support-h1 {
     font-size: 28px;
 }
+.project-container {
+   padding: 28px 20px 30px 20px;
+}
 .project-description-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 10px;
         padding-top: 20px;
     }
 
@@ -2530,11 +2664,16 @@ nav ul.active{
 }
 .project-img-container {
     flex-direction: column;
+    gap: 20px;
 }
 .project-img {
      flex: 0 0 300px; 
     width: 100%;
     
+}
+
+.company-year-project {
+
 }
 
 
@@ -2554,10 +2693,44 @@ nav ul.active{
     font-size: 50px;
 }
 .contact-card h1 {
-    font-size: 50px;;
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+.contact-field {
+    gap: 10px;
 }
 .testimonial-review h2 {
-    font-size: 30px;
+    font-size: 26px;
+}
+.services-dot {
+    margin-bottom: 45px;
+}
+.testimonial-container {
+padding: 28px 20px 50px 20px;
+}
+.ceritifcations-name {
+    font-size: 18px;
+}
+.certifications-date {
+    font-size: 16px;
+}
+.certifications-number {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+      flex-shrink: 0;
+}
+.services-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.services-dot-service {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
 }
 .chatbot-dialog-box {
         top: 40%;
@@ -2571,14 +2744,31 @@ nav ul.active{
         border-bottom-left-radius: 18px;
          border-bottom-right-radius: 18px;
     }
+
+.services-first-icon-background {
+    width: 58px;
+    height: 58px;
+      flex-shrink: 0;
     
 }
 
-@media (max-width: 563px) {
-    html,
-body {
-    overflow-x: hidden;
+.faq h2 {
+    font-size: 18px;
 }
+.services-contact-number {
+        font-size: 13px;
+    }
+.project-icon-services {
+    font-size: 16px;
+    color: white;
+}
+
+.contact-card {
+    padding: 28px 20px 40px 20px;
+}
+
+}
+@media (max-width: 563px) {
     .website-image-slide {
         width: 100%;
         max-width: 50px;
@@ -2627,10 +2817,6 @@ body {
 }
 
 @media (max-width: 473px) {
-    html,
-body {
-    overflow-x: hidden;
-}
     .chatbot-dialog-box {
         top: 40%;
         left: 50%;
@@ -2643,7 +2829,9 @@ body {
         border-bottom-left-radius: 18px;
          border-bottom-right-radius: 18px;
     }
-   
+    .chatbot-input {
+        box-shadow: 0px 0px 15px 0px rgba(221, 221, 221, 0.1490196078) inset;
+    }
     .website-image-size {
         width: 100%;
         max-width: 500px;
@@ -2657,7 +2845,7 @@ body {
         height: 30px;
         }
     .project-img {
-     flex: 0 0 230px; 
+     flex: 0 0 180px; 
     width: 100%;
     
     }
@@ -2672,15 +2860,7 @@ body {
         font-size: 30px;
         
     }
-    .services-available-location {
-        font-size: 10px;
-    }
-    .services-location {
-        font-size: 10px;
-    }
-    .services-contact-number {
-        font-size: 10px;
-    }
+  
     .image-container-certificate { 
     margin-right: 30px;
     margin-left: 30px;
