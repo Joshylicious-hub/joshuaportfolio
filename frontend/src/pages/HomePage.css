@@ -1732,6 +1732,7 @@ background: rgba(255, 255, 255, 0.146);
     gap: 15px;
     padding: 30px;
     border-radius: 30px;
+    z-index: 9999;
 }
 
 .website-company-year {
