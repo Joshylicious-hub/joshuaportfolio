@@ -448,6 +448,13 @@ useEffect(() => {
     });
 }, [chatMessage]);
 
+const formatResponse = (text) => {
+  if (!text.includes(" - ")) return text;
+
+  const [title, ...items] = text.split(" - ");
+
+  return `${title.trim()}\n\n${items.map(item => `- ${item.trim()}`).join("\n")}`;
+};
 
     return (
         <>
@@ -648,7 +655,7 @@ useEffect(() => {
                                     <div key={index} className="chatbot-response">
                                         <RiRobot2Line className="chatbot-icon" />
                                         <ReactMarkdown>
-                                            {message.text}
+                                            {formatResponse(message.text)}
                                         </ReactMarkdown>
 
                                     </div>
