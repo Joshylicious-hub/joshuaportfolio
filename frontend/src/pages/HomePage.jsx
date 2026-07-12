@@ -16,6 +16,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
 import { SiWordpress } from "react-icons/si";
+import { FaShoppingCart } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
 import { PiCodeBold } from "react-icons/pi";
@@ -156,7 +157,7 @@ name: "Willow Pet Food",
 type: "Online Thinkers Technology - Internship",
 year: "2026",
 development: "Web Development, Web Design, SEO Optimization, Graphic Design, Social Media Marketing",
-description: "Contributed to the development of responsive websites by building user interfaces, implementing web features, improving SEO performance, and creating digital content while collaborating with a professional development team.",
+description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
 image: projectdesign,
 tech: [
     {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
@@ -174,7 +175,7 @@ name: "LinkUp",
 type: "Personal Project",
 year: "2025",
 development: "Web Development, Frontend Development, Responsive Web Design",
-description: "Designed and developed LinkUp, a responsive social media web application inspired by the user experiences of Facebook, Instagram, and Twitter. Built with React, HTML, CSS, and JavaScript to showcase modern UI design, reusable components, and responsive frontend development.",
+description: "Designed and developed LinkUp, a social media web application inspired by Facebook, Instagram, and Twitter. Built with React, HTML, CSS, and JavaScript to showcase modern UI design, reusable components, and interactive frontend development.",
 image: linkup,
 tech: [
     {icon: FaReact, name: "React", style: "react"}, 
@@ -217,7 +218,7 @@ id: 1,
 name: "Willow Pet Food",
 year: "2026",
 role: "Online Thinkers Technology - Internship",
-description: "Contributed to the development of responsive websites by building user interfaces, implementing web features, improving SEO performance, and creating digital content while collaborating with a professional development team.",
+description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
 features: [
     {description: "Blog & News Section"},
     {description: "Timeline Design"},
@@ -234,7 +235,7 @@ id: 2,
 name: "LinkUp",
 year: "2025",
 role: "Personal Project",
-description: "Designed and developed LinkUp, a responsive social media web application inspired by the user experiences of Facebook, Instagram, and Twitter. Built with React, HTML, CSS, and JavaScript to showcase modern UI design, reusable components, and responsive frontend development.",
+description: "Designed and developed LinkUp, a social media web application inspired by Facebook, Instagram, and Twitter. Built with React, HTML, CSS, and JavaScript to showcase modern UI design, reusable components, and interactive frontend development.",
 features: [
     {description: "Social Media Feed"},
     {description: "Create & Share Posts"},
@@ -314,6 +315,7 @@ const techItems = [
     { name: "Php", icon: <SiPhp className="icon-php" />, desc: "Programming language" },
     { name: "Javascript", icon: <IoLogoJavascript className="icon-javascript" />, desc: "Programming language" },
     { name: "Wordpress", icon: <SiWordpress className="icon-wordpress" />, desc: "Content Management System" },
+    { name: "OpenCart", icon: <FaShoppingCart className="icon-opencart" />, desc: "Open-source e-commerce platform" },
     { name: "HTML", icon: <FaHtml5  className="icon-html" />, desc: "Web markup language" },
     { name: "CSS", icon: <FaCss3Alt className="icon-css" />, desc: "Web styling language" },
     { name: "MongoDB", icon: <DiMongodb className="icon-mongo" />, desc: "NoSQL database system" },
@@ -463,10 +465,18 @@ useEffect(() => {
                 <a className="header">Joshua</a>
 
                 <ul className={menuOpen ? "active" : ""}>
-                    <li>About</li>
-                    <li>Project</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#project">Project</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
 
                 <button className="book">Book a Call</button>
@@ -559,11 +569,25 @@ useEffect(() => {
                             </div>
                         </div>
 
-                        <div className="website-footer">
-                           <div className="website-visit" href="https://empowerherbest.com/index.php">
-                                <LuExternalLink className="website-icon"/>
-                                <a href={selectedProject.link}>Visit Site</a>
-                           </div>
+                       <div className="website-footer">
+                            {selectedProject.link !== "" ? (
+                                <a
+                                className="website-visit"
+                                href={selectedProject.link}
+                                >
+
+                                    <LuExternalLink className="website-icon" />
+                                    <span>Visit Site</span>
+
+                                </a>
+                            ) : (
+
+                                <div className="website-visit disabled">
+                                    <LuExternalLink className="website-icon" />
+                                    <span>Preview Not Available</span>
+                                </div>
+                                
+                            )}
                         </div>
                     </div>
                     
@@ -690,27 +714,27 @@ useEffect(() => {
                     </p>
                     <ul>
                         <li>
-                            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                            <a href="https://www.facebook.com/joshua.andres.180072" target="_blank" rel="noreferrer">
                             <FaFacebookF />
                         </a>
                         </li>
                         <li>
-                            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                            <a href="https://www.instagram.com/jsh.andrs/" target="_blank" rel="noreferrer">
                               <FaInstagram />
                             </a>
                         </li>
                         <li>
-                         <a href="https://x.com" target="_blank" rel="noreferrer">
+                         <a href="https://github.com/Joshylicious-hub" target="_blank" rel="noreferrer">
                             <FaGithub />
                         </a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/joshua-andres-758939388/" target="_blank" rel="noreferrer">
                                 <FaLinkedinIn />
                             </a>
                         </li>
                     </ul>
-                     <a className="button-direction">
+                     <a className="button-direction" href="#home">
                         <p>Get Started</p>
                         <li><FaArrowRight /></li>
                      </a>
@@ -720,6 +744,7 @@ useEffect(() => {
 
             <div className="right">
                 <motion.p
+                    id="home"
                     className="details"
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -852,7 +877,7 @@ useEffect(() => {
                     </motion.div>
                 </div>
 
-                <section className="about">
+                <section className="about" id="about">
                     <div className="experience-container">
                         <div className="dot"></div>
                         <p>About</p>
@@ -872,17 +897,18 @@ useEffect(() => {
                             }}
                             viewport={{ once: true }}
                             >
-                                Building digital solutions <br/> that makes an impact.
+                               Get to Know the Person Behind the Code
                             </motion.h1>
                             <p>
-                                I'm a passionate Full Stack Web Developer with a strong focus on
-                                building responsive, user-friendly, and high-performing websites
-                                and applications
+                               I'm a Full Stack Web Developer passionate about creating modern web applications with clean, 
+                               maintainable code and intuitive user experiences. I enjoy learning new technologies, collaborating 
+                               on projects, and solving real-world problems through software development.
                             </p>
 
                             <p>
-                                I enjoy turning ideas into real digital experiences and continuously
-                                learn new technologies to stay current in the fast-evolving tech landscape.
+                                Through personal projects and professional experience, I've developed skills in frontend development, 
+                                backend integration, UI/UX design, and SEO, allowing me to create complete digital solutions 
+                                from concept to implementation.
                             </p>
                             
                         </div>
@@ -1120,12 +1146,36 @@ useEffect(() => {
                             </div>
                         </div>
                         <p className="internship-description">
-                           Throughout my internship at Online Thinkers Technology, I gained practical experience in designing and developing responsive websites that prioritize usability, performance, and accessibility. I collaborated with the team to build intuitive user interfaces, implement web features, and maintain websites using modern development practices. Beyond web development, I supported SEO initiatives by optimizing website content and structure, created visual assets for branding and marketing campaigns, and contributed to social media content that enhanced online engagement. This experience allowed me to improve both my technical and creative skills while working in a fast-paced, collaborative environment.
+                           During my internship at Online Thinkers Technology, I gained practical experience working on e-commerce 
+                           websites using WordPress and OpenCart. My primary responsibility was creating blog articles for clients' 
+                           websites, where I learned to develop responsive page layouts, incorporate interactive animations to enhance 
+                           user engagement, and produce informative, well-structured content tailored to various topics and target 
+                           audiences.
+                        </p>
+
+                         <p className="internship-description">
+                           I also implemented on-page SEO best practices by optimizing keywords, meta titles, meta descriptions, 
+                           image file names, and heading structures (H1 and H2) to improve search engine visibility and organic traffic. 
+                           In addition, I contributed to enhancing website visibility and optimizing website performance to 
+                           provide a faster and better user experience for e-commerce platforms.
+                        </p>
+
+                         <p className="internship-description">
+                           Beyond website content, I designed graphics and created written content for clients' social media 
+                           marketing campaigns, strengthening my skills in visual communication and digital marketing. 
+                           Towards the end of my internship, I was tasked with designing the landing page and About Us page 
+                           for an e-commerce website in Figma, where I applied modern UI/UX principles to create clean, 
+                           responsive, and user-friendly designs.
+                        </p>
+
+                        <p className="internship-description">
+                           This internship allowed me to build a strong foundation in e-commerce website management, SEO, content 
+                           creation, graphic design, UI/UX design, and collaborative problem-solving in a professional environment.
                         </p>
                     </div>
                 </div>
 
-                <section className="projects">
+                <section className="projects" id="project">
                      <div className="experience-container">
                         <div className="dot"></div>
                         <p>Project</p>
@@ -1189,16 +1239,16 @@ useEffect(() => {
                             
                             <div className="project-description">
                                 <div className="header-container">
-                                    <h1>{project.name}</h1>
+                                    <h2>{project.name}</h2>
                                     <div className="company-year-project">
                                        {project.year}
                                     </div>
                                 </div>
                                 <div className="company-profile">
-                                    <p className="company-name">
+                                    <h3 className="company-name">
                                         
                                         {project.type}
-                                    </p>
+                                    </h3>
                                     <p className="company-role">
                                         {project.development}
                                     </p>
@@ -1228,7 +1278,7 @@ useEffect(() => {
                                     <Featuresicon className="project-icon" />
                                 </div>
                                 <div>
-                                    <p>{features.header}</p>
+                                    <h4>{features.header}</h4>
                                     <p>{features.description}</p>
                                 </div>
                             </div>
@@ -1252,7 +1302,7 @@ useEffect(() => {
                             </div>
                             
                             <div className="testimonial-review">
-                                 <motion.h2
+                                 <motion.h1
                                     className="additional-h1"
                                     initial={{
                                         clipPath: "inset(0 100% 0 0)",
@@ -1267,7 +1317,7 @@ useEffect(() => {
                                     viewport={{ once: true }}
                                     >
                                     “ {testimonial[count].comment} ”
-                                </motion.h2>
+                                </motion.h1>
                                 <div className="testimonial-controller">
                                     <div 
                                     className="testimonial-button"
@@ -1368,7 +1418,7 @@ useEffect(() => {
                     </section>
 
 
-                    <section className="services">
+                    <section className="services" id="services">
                         <div className="services-container">
                              <div className="services-dot-service">
                                 <div className="dot"></div>
@@ -1432,7 +1482,7 @@ useEffect(() => {
                                         <LuBrainCircuit className="project-icon" />
                                     </div>
                                 )}
-                                    <motion.h2
+                                    <motion.h1
                                     onClick={() => setOpenFAQ(openFAQ === 7 ? null : 7)}
                                     style={{
                                         color: openFAQ === 7
@@ -1456,7 +1506,7 @@ useEffect(() => {
                                     >
                                         Artificial Intelligence
                                         <span class="text-number">(02)</span>
-                                    </motion.h2>
+                                    </motion.h1>
                                  </div>
                                 <AnimatePresence>
                                     {openFAQ === 7 && (
@@ -1482,7 +1532,7 @@ useEffect(() => {
                                         <HiOutlineMagnifyingGlass className="project-icon" />
                                     </div>
                                     )}
-                                    <motion.h2
+                                    <motion.h1
                                     onClick={() => setOpenFAQ(openFAQ === 8 ? null : 8)}
                                     style={{
                                         color: openFAQ === 8
@@ -1506,7 +1556,7 @@ useEffect(() => {
                                     >
                                         SEO
                                         <span class="text-number">(03)</span>
-                                    </motion.h2>
+                                    </motion.h1>
                                  </div>
                                 <AnimatePresence>
                                     {openFAQ === 8 && (
@@ -1531,7 +1581,7 @@ useEffect(() => {
                                         <HiOutlinePaintBrush className="project-icon" />
                                     </div>
                                     )}
-                                    <motion.h2
+                                    <motion.h1
                                     onClick={() => setOpenFAQ(openFAQ === 9 ? null : 9)}
                                     style={{
                                         color: openFAQ === 9
@@ -1555,7 +1605,7 @@ useEffect(() => {
                                     >
                                         UI/UX IMPLEMENTATION
                                         <span class="text-number">(04)</span>
-                                    </motion.h2>
+                                    </motion.h1>
                                  </div>
                                 <AnimatePresence>
                                     {openFAQ === 9 && (
@@ -1802,7 +1852,7 @@ useEffect(() => {
                         </div>
                     </section>
 
-                    <section className="contact">
+                    <section className="contact" id="contact">
                         <div className="contact-card">
                             <motion.h1
                                     initial={{
