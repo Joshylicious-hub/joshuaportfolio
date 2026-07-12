@@ -438,6 +438,8 @@ const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/
             text: data.reply
         }
         ])
+
+        console.log(data.reply);
   
 }
 
