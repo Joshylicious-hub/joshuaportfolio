@@ -220,9 +220,9 @@ year: "2026",
 role: "Online Thinkers Technology - Internship",
 description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
 features: [
-    {description: "Blog & News Section"},
+    {description: "Modern Pet Care Landing Page"},
     {description: "Timeline Design"},
-    {description: "Modern Pet Care Landing Page"}
+    {description: "Blog & News Section"}
 ],
 tech: [
     {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
@@ -315,7 +315,7 @@ const techItems = [
     { name: "Php", icon: <SiPhp className="icon-php" />, desc: "Programming language" },
     { name: "Javascript", icon: <IoLogoJavascript className="icon-javascript" />, desc: "Programming language" },
     { name: "Wordpress", icon: <SiWordpress className="icon-wordpress" />, desc: "Content Management System" },
-    { name: "OpenCart", icon: <FaShoppingCart className="icon-opencart" />, desc: "Open-source e-commerce platform" },
+    { name: "OpenCart", icon: <FaShoppingCart className="icon-opencart" />, desc: "Open-source e-commerce" },
     { name: "HTML", icon: <FaHtml5  className="icon-html" />, desc: "Web markup language" },
     { name: "CSS", icon: <FaCss3Alt className="icon-css" />, desc: "Web styling language" },
     { name: "MongoDB", icon: <DiMongodb className="icon-mongo" />, desc: "NoSQL database system" },
