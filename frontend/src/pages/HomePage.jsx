@@ -1,5 +1,6 @@
 import './HomePage.css'
 import { useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 import { DiMongodb } from "react-icons/di";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import { FaGithub, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -646,7 +647,10 @@ useEffect(() => {
                                     
                                     <div key={index} className="chatbot-response">
                                         <RiRobot2Line className="chatbot-icon" />
-                                        <p>{message.text}</p>
+                                        <ReactMarkdown>
+                                            {message.text}
+                                        </ReactMarkdown>
+
                                     </div>
                                 )
                             ))}
