@@ -4,6 +4,18 @@ import { DiMongodb } from "react-icons/di";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import { FaGithub, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { useRef } from "react";
+import {
+  FaLaptopCode,
+  FaPaintBrush,
+  FaPuzzlePiece,
+  FaMobileAlt,
+  FaProjectDiagram,
+  FaRobot,
+  FaGraduationCap,
+  FaMousePointer,
+  FaHandshake,
+  FaDraftingCompass 
+} from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiCanva, SiFigma } from "react-icons/si";
@@ -164,10 +176,10 @@ tech: [
     {icon: SiFigma, name: "Figma", style: "figma"}
 ],
 features: [
-    {icon: HiCodeBracket, header: "Development", description: "Responsive Websites"},
+    {icon: FaDraftingCompass , header: "Wireframing", description: "Layout"},
     {icon: HiOutlinePaintBrush, header: "Web Design", description: "UI & Graphics"},
-    {icon: HiMagnifyingGlass, header: "SEO Strategy", description: "Visibility"},
-    {icon: HiUserGroup, header: "Client Projects", description: "Experience"},
+    {icon: FaMousePointer, header: "Interactive", description: "User Experience"},
+    {icon: FaHandshake, header: "Client Projects", description: "Internship Project"},
 ]
 }, {
 id: 2,
@@ -184,10 +196,10 @@ tech: [
     {icon: IoLogoJavascript, name: "Javascript", style: "javascript"}
 ], 
 features: [
-    {icon: HiCodeBracket, header: "Development", description: "Responsive Websites"},
-    {icon: HiCodeBracket, header: "Web Design", description: "UI & Graphics"},
-    {icon: HiCodeBracket, header: "SEO Strategy", description: "Visibility"},
-    {icon: HiCodeBracket, header: "Personal Project", description: "Experience"},
+    {icon: FaLaptopCode, header: "Frontend Development", description: "UI Design"},
+    {icon: FaPaintBrush, header: "Social Media UI", description: "UI & Graphics"},
+    {icon: FaPuzzlePiece, header: "Reusable Components", description: "Scalable"},
+    {icon: FaProjectDiagram, header: "Personal Project", description: "Hands-on"},
 ]
 }, {
 id: 3,
@@ -205,10 +217,10 @@ tech: [
     {icon: SiMysql, name: "MySQL", style: "mysql"}
 ], 
 features: [
-    {icon: HiCodeBracket, header: "Development", description: "Responsive Websites"},
-    {icon: HiCodeBracket, header: "Web Design", description: "UI & Graphics"},
-    {icon: HiCodeBracket, header: "Artificial Intelligence", description: "AI Automation"},
-    {icon: HiCodeBracket, header: "Capstone Projects", description: "Experience"},
+    {icon: FaLaptopCode, header: "Development", description: "Responsive Websites"},
+    {icon: FaPaintBrush, header: "Web Design", description: "UI & Graphics"},
+    {icon: FaRobot, header: "Artificial Intelligence", description: "Automation"},
+    {icon: FaGraduationCap, header: "Capstone Projects", description: "Experience"},
 ]
 }
 ];
