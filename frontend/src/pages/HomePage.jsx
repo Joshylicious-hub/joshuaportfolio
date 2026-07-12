@@ -1,6 +1,7 @@
 import './HomePage.css'
 import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import { DiMongodb } from "react-icons/di";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import { FaGithub, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -448,13 +449,6 @@ useEffect(() => {
     });
 }, [chatMessage]);
 
-const formatResponse = (text) => {
-  if (!text.includes(" - ")) return text;
-
-  const [title, ...items] = text.split(" - ");
-
-  return `${title.trim()}\n\n${items.map(item => `- ${item.trim()}`).join("\n")}`;
-};
 
     return (
         <>
@@ -654,8 +648,8 @@ const formatResponse = (text) => {
                                     
                                     <div key={index} className="chatbot-response">
                                         <RiRobot2Line className="chatbot-icon" />
-                                        <ReactMarkdown>
-                                            {formatResponse(message.text)}
+                                       <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                                            {message.text}
                                         </ReactMarkdown>
 
                                     </div>
