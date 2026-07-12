@@ -2264,6 +2264,7 @@ nav ul.active{
 }
 
 @media (max-width: 767px) {
+
 .services-available-location {
     font-size: 13px;
 }
@@ -2314,6 +2315,9 @@ height: 30px;
     max-width:100%;
     padding: 25px 15px 15px 15px;
     z-index: 10000;
+}
+.website-visit span{
+    font-size: 13px;
 }
 .company-tech-name {
     font-size: 10px;
@@ -2385,9 +2389,12 @@ padding: 0px;
     align-items: center;
 }
 .website-back-button {
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-right: 15px;
 }
+
 
 .website-project-icon {
     font-size: 12px;
@@ -2446,7 +2453,8 @@ padding: 0px;
     font-size: 16px;
 }
 .website-visit {
-padding: 8px 20px;
+padding: 5px 10px;
+border-radius: 8px;
 }
 .website-visit p {
     font-size: 16px;
