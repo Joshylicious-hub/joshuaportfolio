@@ -1,7 +1,6 @@
 import './HomePage.css'
 import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
 import { DiMongodb } from "react-icons/di";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import { FaGithub, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -438,8 +437,6 @@ const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/
             text: data.reply
         }
         ])
-
-        console.log(data.reply);
   
 }
 
@@ -650,7 +647,7 @@ useEffect(() => {
                                     
                                     <div key={index} className="chatbot-response">
                                         <RiRobot2Line className="chatbot-icon" />
-                                       <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                                       <ReactMarkdown>
                                             {message.text}
                                         </ReactMarkdown>
 
