@@ -2287,8 +2287,10 @@ nav ul.active{
 @media (max-width: 767px) {
 
 .chatbot-card {
+    height: 46px;
     font-size: 13px;
-    padding: 0px 24px;
+    padding: 0px 18px;
+        gap: 6px;
 }
 .chatbot-head:hover .chatbot-popup{
     opacity: 0;
