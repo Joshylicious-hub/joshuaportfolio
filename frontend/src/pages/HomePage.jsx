@@ -165,7 +165,7 @@ const negative = () => {
 
 const project = [{
 id: 1,
-name: "Willow Pet Food",
+name: "E-commerce Web Design",
 type: "Online Thinkers Technology - Internship",
 year: "2026",
 development: "Web Development, Web Design, SEO Optimization, Graphic Design, Social Media Marketing",
@@ -227,7 +227,7 @@ features: [
 
 const projectwebsite = [{
 id: 1,
-name: "Willow Pet Food",
+name: "E-commerce Web Design",
 year: "2026",
 role: "Online Thinkers Technology - Internship",
 description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
@@ -618,18 +618,19 @@ useEffect(() => {
             </>
         )}
 
-       <div 
-       className="chatbot-head"
-       onClick={() => setOpenChatbot(prev => !prev)}
-       >
-            <div className="chatbot-card">
-                <RiRobot2Line className="chatbot-icon" />
-            </div>
+       <div
+        className="chatbot-head"
+        onClick={() => setOpenChatbot(prev => !prev)}
+        >
+        <div className="chatbot-card">
+            <span className="ai-dot"></span>
+            <span>Ask Joshua's AI</span>
+        </div>
 
-            <div className="chatbot-popup">
-                <h4>Chat with Joshua AI</h4>
-                <p>Ask about my projects, skills, and experience.</p>
-            </div>
+        <div className="chatbot-popup">
+            <h4>Chat with Joshua AI</h4>
+            <p>Ask about my projects, skills, and experience.</p>
+        </div>
         </div>
 
         {openChatbot && (
