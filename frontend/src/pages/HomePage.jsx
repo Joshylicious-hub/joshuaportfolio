@@ -69,6 +69,9 @@ import joshuapaldo from "../assets/joshuapaldo.jpg";
 import joshuafake from "../assets/joshuafake.jpg"; 
 import joshuamasarap from "../assets/joshuamasarap.jpg"; 
 import joshuaprofile from "../assets/joshuaprofile.jpg"; 
+import testimonial1 from "../assets/testimonial-review-ceo.jpg";
+import testimonial2 from "../assets/testimonial-review-web-developer.png"; 
+import testimonial3 from "../assets/testimonial-review-project-sales.png"; 
 import empowerher from "../assets/empowerher.png"; 
 import linkup from "../assets/LinkUp.png";
 import projectdesign from "../assets/Container.png"
@@ -126,25 +129,25 @@ image: jpcs
 const testimonial = [
 {
     id: 1,
-    comment: "Working with Joshua was a great experience. He delivered a modern, responsive website with clean code and excellent attention to detail. Communication was smooth throughout the project.",
+    comment: "Joshua was proactive, hardworking, and easy to train. I'm confident he has a bright future in the IT industry.",
     current: "1/3",
-    profile: joshua,
-    name: "Joshua Andres",
-    position: "Software Engineer"
+    profile: testimonial1,
+    name: "Renato Garcia Jr",
+    position: "CEO/General Manager"
 }, {
     id: 2,
     comment: "Joshua exceeded our expectations by delivering high-quality work ahead of schedule. His problem-solving skills and dedication made the entire development process seamless he did a great job.",
     current: "2/3",
-    profile: joshuapaldo,
-    name: "Cyril Vicente",
-    position: "Pharmacist"
+    profile: testimonial2,
+    name: "Samuel Arsua",
+    position: "Web Developer/Designer"
 }, {
     id: 3,
     comment: "From the initial design to the final implementation, Joshua demonstrated professionalism and creativity. We are extremely satisfied with the results and would gladly work with him again.",
     current: "3/3",
-    profile: joshuafake,
-    name: "Justine Bulagui",
-    position: "Tambay"
+    profile: testimonial3,
+    name: "Elmarcito Adiarte",
+    position: "Sales/Project Coordinator"
 }]
 
 const number = () => {
