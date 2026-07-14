@@ -76,7 +76,7 @@ import empowerher from "../assets/empowerher.png";
 import linkup from "../assets/LinkUp.png";
 import projectdesign from "../assets/Container.png"
 import signature from "../assets/signature.png";
-import elegant from "../assets/elegant.mp4";
+import backgroundvideo from "../assets/backgroundvideo.mp4";
 import { RiRobot2Line } from "react-icons/ri";
 import { LuCodeXml } from "react-icons/lu";
 import { LuUserRound } from "react-icons/lu";
@@ -472,7 +472,7 @@ useEffect(() => {
             muted
             playsInline
         >
-            <source src={elegant} type="video/mp4" />
+            <source src={backgroundvideo} type="video/mp4" />
         </video>
 
         <nav>
