@@ -71,7 +71,7 @@ import joshuamasarap from "../assets/joshuamasarap.jpg";
 import joshuaprofile from "../assets/joshuaprofile.jpg"; 
 import testimonial1 from "../assets/testimonial-review-ceo.jpg";
 import testimonial2 from "../assets/testimonial-review-web-developer.png"; 
-import testimonial3 from "../assets/testimonial-review-project-sales.png"; 
+import testimonial3 from "../assets/testimonial-review-project-sales.jpg"; 
 import empowerher from "../assets/empowerher.png"; 
 import linkup from "../assets/LinkUp.png";
 import projectdesign from "../assets/Container.png"
@@ -134,20 +134,20 @@ const testimonial = [
     profile: testimonial1,
     name: "Renato Garcia Jr",
     position: "CEO/General Manager"
-}, {
+},  {
     id: 2,
-    comment: "Joshua exceeded our expectations by delivering high-quality work ahead of schedule. His problem-solving skills and dedication made the entire development process seamless he did a great job.",
+    comment: "Keep up the good work, Joshua. If you want to grow further in this industry, it’s important to take initiative and stay focused on developing your craft. Continue improving your skills and be proactive in seeking opportunities to learn and grow.",
     current: "2/3",
+    profile: testimonial3,
+    name: "Elmarcito Adiarte",
+    position: "Sale/Operations Officer"
+},{
+    id: 3,
+    comment: "Joshua quickly adapted to new tasks, accepted feedback positively, and was always willing to learn. His dedication and initiative were impressive, and I’m confident he will continue to succeed in his career.",
+    current: "3/3",
     profile: testimonial2,
     name: "Samuel Arsua",
     position: "Web Developer/Designer"
-}, {
-    id: 3,
-    comment: "From the initial design to the final implementation, Joshua demonstrated professionalism and creativity. We are extremely satisfied with the results and would gladly work with him again.",
-    current: "3/3",
-    profile: testimonial3,
-    name: "Elmarcito Adiarte",
-    position: "Sales/Project Coordinator"
 }]
 
 const number = () => {
