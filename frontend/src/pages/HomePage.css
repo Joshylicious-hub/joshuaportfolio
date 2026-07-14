@@ -1,8 +1,8 @@
 .chatbot-head {
     position: fixed;
-    right: 30px;
-    bottom: 30px;
-    z-index: 7009;
+    right: 10px;
+    bottom: 15px;
+    z-index: 4009;
 }
 
 .chatbot-card {
@@ -2285,6 +2285,16 @@ nav ul.active{
 }
 
 @media (max-width: 767px) {
+
+.chatbot-card {
+    font-size: 13px;
+    padding: 0px 24px;
+}
+.chatbot-head:hover .chatbot-popup{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(0);
+}
 
 .services-available-location {
     font-size: 13px;
