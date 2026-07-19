@@ -36,7 +36,6 @@ app.post('/api/openai/chat', async (req, res) => {
 
     const response = await client.responses.create({
     model: "gpt-5-mini",
-    temperature: 0.3,
     input: [
         {
             role: "developer",
