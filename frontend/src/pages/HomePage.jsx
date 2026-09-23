@@ -444,7 +444,7 @@ const sendMessage = async (e) => {
 
         const data = await response.json();
 
-        if(!data.ok) {
+        if(!response.ok) {
             console.error(data.message);
             setIsTyping(false);
             return;
