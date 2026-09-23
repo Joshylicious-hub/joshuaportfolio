@@ -52,6 +52,8 @@ import product from "../assets/willow-home-page-product.jpg";
 import willowslide from "../assets/willow-pet-home-page-slide.jpg";
 import willowfacts from "../assets/willow-pet-home-page-facts.jpg";
 import willowfooter from "../assets/willow-pet-home-page-footer.png";
+import willowsteps from "../assets/willow-pet-steps.png";
+import willowtestimonial from "../assets/willow-pet-testimonial.png";
 import chatpage from "../assets/link-up-chat-page.png";
 import linkuphomepage from "../assets/link-up-home-page.png";
 import profilepage from "../assets/link-up-profile-page.png";
@@ -244,7 +246,7 @@ tech: [
     {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
     {icon: SiFigma, name: "Figma", style: "figma"}
 ],
-image: [projectdesign, willowfacts, faq, product, willowslide, willowfooter],
+image: [willowsteps, willowfacts, faq, product, willowslide, willowtestimonial],
 link: "https://willowpetfood.ph/"  
 }, {
 id: 2,
@@ -446,12 +448,9 @@ const sendMessage = async (e) => {
 
         if(!response.ok) {
             console.error(data.message);
-            setIsTyping(false);
+           
             return;
         }
-        
-        
-
         
         setChatMessage(chatMessage => [
             ...chatMessage,
@@ -460,12 +459,11 @@ const sendMessage = async (e) => {
             text: data.reply
         }
             ])
+         setIsTyping(false);
 
     }catch(err) {
         console.error(err.message);
     }
-
-
   
 }
 
