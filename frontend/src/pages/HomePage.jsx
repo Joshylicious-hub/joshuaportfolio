@@ -236,7 +236,7 @@ features: [
 
 const projectwebsite = [{
 id: 1,
-name: "AI Automated Job Application Recommendation and Tracking system",
+name: "AI Automated Job Application Recommendation and Tracking System",
 year: "2026",
 role: "Personal Project",
 description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
@@ -249,7 +249,7 @@ tech: [
     {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
     {icon: SiFigma, name: "Figma", style: "figma"}
 ],
-image: [joblanding, jobhome, jobchat, product, willowslide, willowtestimonial],
+image: [product, product, product, product, willowslide, willowtestimonial],
 link: "https://willowpetfood.ph/"  
 }, {
 id: 2,
