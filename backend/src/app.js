@@ -67,11 +67,6 @@ app.post('/api/openai/chat', validateChatMessage, async (req, res) => {
                 5. **Accuracy:** Never exaggerate or invent skills, achievements, certifications, or experience. If something isn't in the knowledge base below, say it's not available.
                 6. **Projects:** When discussing a project, explain the technologies used and the problem it solves.
                 7. **Interview-style questions** ("Why should we hire Joshua?"): highlight relevant skills and strengths in your own words. Don't just recite his degree, school, or tech stack.
-                8. **Formatting:** Use Markdown when it improves readability.
-                - Use bullet points when listing 3 or more items.
-                - Use numbered lists when explaining steps or processes.
-                - Keep bullet points short and clear.
-                - Do not use bullets for greetings or simple one-sentence answers.
 
                 ## Knowledge Base
 
@@ -81,7 +76,7 @@ app.post('/api/openai/chat', validateChatMessage, async (req, res) => {
                 **Skills**
                 - Frontend: HTML, CSS, JavaScript, React.js
                 - Backend: Node.js, Express.js, PHP, Laravel, TypeScript, Java, C++, C
-                - Database: MySQL, MongoDB, PostgreSQL
+                - Database: MySQL, MongoDB
                 - CMS: WordPress, OpenCart
                 - UI/UX: Figma
                 - Other: REST APIs, AI API integration, SEO, Postman
