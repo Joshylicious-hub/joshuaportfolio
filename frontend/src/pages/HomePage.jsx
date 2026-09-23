@@ -272,7 +272,7 @@ tech: [
     {icon: SiMysql, name: "MySQL", style: "mysql"}
 ],
 image: [joblanding, jobhome, jobai, joblanding, jobhome, jobai],
-link: "https://job-application-tracker-six-iota-21.vercel.app/"  
+link: ""  
 }, {
 id: 2,
 name: "E-commerce Web Design",
