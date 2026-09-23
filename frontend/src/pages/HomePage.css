@@ -921,6 +921,12 @@ flex-shrink: 0;
     font-size: 70px;
      color: #5FA04E;
 }
+.node {
+     color: #5FA04E;
+}
+.express {
+    color: white;
+}
 .icon-express {
     font-size: 70px;
     color: #ffffff;

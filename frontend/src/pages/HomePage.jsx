@@ -174,21 +174,23 @@ const negative = () => {
 
 const project = [{
 id: 1,
-name: "E-commerce Web Design",
-type: "Online Thinkers Technology - Internship",
-year: "2026",
-development: "Web Development, Web Design, SEO Optimization, Graphic Design, Social Media Marketing",
-description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
-image: projectdesign,
+name: "AI Job Recommendation and Tracking System",
+type: "Personal Project",
+year: "2026 - Developing",
+development: "Web Development, Web Design, AI Integration",
+description: "Developing an AI-powered job application system that automates application tracking and provides personalized job recommendations based on a user's resume, integrating AI-assisted job search and application management features.",
+image: joblanding,
 tech: [
-    {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
-    {icon: SiFigma, name: "Figma", style: "figma"}
+    {icon: FaReact, name: "React", style: "react"}, 
+    {icon: FaNodeJs, name: "Node.js", style: "node"}, 
+    {icon: SiExpress, name: "Express.js", style: "express"},
+    {icon: SiMysql, name: "MySQL", style: "mysql"}
 ],
 features: [
-    {icon: FaDraftingCompass , header: "Wireframing", description: "Layout"},
-    {icon: HiOutlinePaintBrush, header: "Web Design", description: "UI & Graphics"},
+    {icon: FaRobot, header: "Artificial Intelligence", description: "Automation"},
+    {icon: FaLaptopCode, header: "Development", description: "Responsive Websites"},
     {icon: FaMousePointer, header: "Interactive", description: "User Experience"},
-    {icon: FaHandshake, header: "Client Projects", description: "Internship Project"},
+    {icon: FaProjectDiagram, header: "Personal Project", description: "Hands-On"},
 ]
 }, {
 id: 2,
@@ -212,7 +214,7 @@ features: [
 id: 3,
 name: "LinkUp",
 type: "Personal Project",
-year: "2025",
+year: "2025 - Developing",
 development: "Web Development, Frontend Development, Responsive Web Design",
 description: "Designed and developed LinkUp, a social media web application inspired by Facebook, Instagram, and Twitter. Built with React, HTML, CSS, and JavaScript to showcase modern UI design, reusable components, and interactive frontend development.",
 image: linkup,
@@ -255,19 +257,21 @@ features: [
 const projectwebsite = [{
 id: 1,
 name: "AI Automated Job Application Recommendation and Tracking System",
-year: "2026",
+year: "2026 - Developing",
 role: "Personal Project",
-description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
+description: "Developing an AI-powered job application system that automates application tracking and provides personalized job recommendations based on a user's resume, integrating AI-assisted job search and application management features.",
 features: [
-    {description: "Modern Pet Care Landing Page"},
-    {description: "Timeline Design"},
-    {description: "Blog & News Section"}
+    {description: "AI-Assistant"},
+    {description: "AI-Automation"},
+    {description: "Job Tracking and Recommendation System"}
 ],
 tech: [
-    {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
-    {icon: SiFigma, name: "Figma", style: "figma"}
+    {icon: FaReact, name: "React", style: "react"}, 
+    {icon: FaNodeJs, name: "Node.js", style: "node"}, 
+    {icon: SiExpress, name: "Express.js", style: "express"},
+    {icon: SiMysql, name: "MySQL", style: "mysql"}
 ],
-image: [product, product, product, product, willowslide, willowtestimonial],
+image: [joblanding, jobhome, jobai, joblanding, jobhome, jobai],
 link: "https://willowpetfood.ph/"  
 }, {
 id: 2,
@@ -289,7 +293,7 @@ link: "https://willowpetfood.ph/"
 }, {
 id: 3,
 name: "LinkUp",
-year: "2025",
+year: "2025 - Developing",
 role: "Personal Project",
 description: "Designed and developed LinkUp, a social media web application inspired by Facebook, Instagram, and Twitter. Built with React, HTML, CSS, and JavaScript to showcase modern UI design, reusable components, and interactive frontend development.",
 features: [
