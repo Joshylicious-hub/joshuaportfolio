@@ -192,6 +192,24 @@ features: [
 ]
 }, {
 id: 2,
+name: "E-commerce Web Design",
+type: "Online Thinkers Technology - Internship",
+year: "2026",
+development: "Web Development, Web Design, SEO Optimization, Graphic Design, Social Media Marketing",
+description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
+image: projectdesign,
+tech: [
+    {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
+    {icon: SiFigma, name: "Figma", style: "figma"}
+],
+features: [
+    {icon: FaDraftingCompass , header: "Wireframing", description: "Layout"},
+    {icon: HiOutlinePaintBrush, header: "Web Design", description: "UI & Graphics"},
+    {icon: FaMousePointer, header: "Interactive", description: "User Experience"},
+    {icon: FaHandshake, header: "Client Projects", description: "Internship Project"},
+]
+}, {
+id: 3,
 name: "LinkUp",
 type: "Personal Project",
 year: "2025",
@@ -211,7 +229,7 @@ features: [
     {icon: FaProjectDiagram, header: "Personal Project", description: "Hands-on"},
 ]
 }, {
-id: 3,
+id: 4,
 name: "EmpowerHer",
 type: "Capstone Project",
 year: "2025",
