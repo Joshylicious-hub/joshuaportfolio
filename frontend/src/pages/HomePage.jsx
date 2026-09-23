@@ -87,6 +87,7 @@ import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
+import ReactMarkdown from 'react-markdown';
 
 function HomePage() {
 const [openFAQ, setOpenFAQ] = useState(null);
@@ -244,7 +245,7 @@ tech: [
     {icon: SiFigma, name: "Figma", style: "figma"}
 ],
 image: [projectdesign, willowfacts, faq, product, willowslide, willowfooter],
-link: ""  
+link: "https://willowpetfood.ph/"  
 }, {
 id: 2,
 name: "LinkUp",
@@ -285,7 +286,7 @@ tech: [
     {icon: SiMysql, name: "MySQL", style: "mysql"}
 ], 
 image: [empowerher, empowerherdashboard, empowerherchatbot,  empowerherpersonalized, empowerherlesson, empowerhercommunity],
-link: "https://empowerherbest.com/index.php"  
+link: ""  
 }]
 
 const increase = () => {
@@ -427,30 +428,44 @@ const sendMessage = async (e) => {
     setChatbotMessage("");
     }
 
-setIsTyping(true);
+    setIsTyping(true);
 
-const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/chat", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        message: chatbotMessage
+    try {
+
+        const response = await fetch("https://joshuaportfolio-1.onrender.com/api/openai/chat", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            message: chatbotMessage
+        })
     })
-})
 
-    const data = await response.json();
-    
-    setIsTyping(false);
+        const data = await response.json();
 
-    
+        if(!data.ok) {
+            console.error(data.message);
+            setIsTyping(false);
+            return;
+        }
+        
+        
+
+        
         setChatMessage(chatMessage => [
             ...chatMessage,
         {
             role: "chatbot",
             text: data.reply
         }
-        ])
+            ])
+
+    }catch(err) {
+        console.error(err.message);
+    }
+
+
   
 }
 
@@ -662,9 +677,9 @@ useEffect(() => {
                                     
                                     <div key={index} className="chatbot-response">
                                         <RiRobot2Line className="chatbot-icon" />
-                                       <p>
+                                       <ReactMarkdown>
                                             {message.text}
-                                        </p>
+                                        </ReactMarkdown>
 
                                     </div>
                                 )
