@@ -54,6 +54,9 @@ import willowfacts from "../assets/willow-pet-home-page-facts.jpg";
 import willowfooter from "../assets/willow-pet-home-page-footer.png";
 import willowsteps from "../assets/willow-pet-steps.png";
 import willowtestimonial from "../assets/willow-pet-testimonial.png";
+import jobai from "../assets/job-chatbot-page.png";
+import jobhome from "../assets/job-home-page.png";
+import joblanding from "../assets/job-landing-page.png";
 import chatpage from "../assets/link-up-chat-page.png";
 import linkuphomepage from "../assets/link-up-home-page.png";
 import profilepage from "../assets/link-up-profile-page.png";
@@ -233,6 +236,23 @@ features: [
 
 const projectwebsite = [{
 id: 1,
+name: "AI Automated Job Application Recommendation and Tracking system",
+year: "2026",
+role: "Personal Project",
+description: "Designed the landing page and About Us page for an e-commerce website in Figma, creating modern user interfaces, interactive prototypes, and visually engaging layouts that aligned with the client's brand identity.",
+features: [
+    {description: "Modern Pet Care Landing Page"},
+    {description: "Timeline Design"},
+    {description: "Blog & News Section"}
+],
+tech: [
+    {icon: SiCanva, name:"Canva", style: "canva-logo" }, 
+    {icon: SiFigma, name: "Figma", style: "figma"}
+],
+image: [joblanding, jobhome, jobchat, product, willowslide, willowtestimonial],
+link: "https://willowpetfood.ph/"  
+}, {
+id: 2,
 name: "E-commerce Web Design",
 year: "2026",
 role: "Online Thinkers Technology - Internship",
@@ -249,7 +269,7 @@ tech: [
 image: [willowsteps, willowfacts, faq, product, willowslide, willowtestimonial],
 link: "https://willowpetfood.ph/"  
 }, {
-id: 2,
+id: 3,
 name: "LinkUp",
 year: "2025",
 role: "Personal Project",
@@ -269,7 +289,7 @@ tech: [
 image: [linkup, linkuphomepage, postpage, profilepage, storiespage, chatpage],
 link: "https://link-up-rust-six.vercel.app/"  
 }, {
-id: 3,
+id: 4,
 name: "EmpowerHer",
 year: "2025",
 role: "Capstone Project",
